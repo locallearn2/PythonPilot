@@ -16,3 +16,4 @@ Task 1: User Input & Menu Display
    - Example: "Drinks: Coffee ($5), Tea ($5)..."
 
 """
+print("Hello, world")
