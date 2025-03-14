@@ -11,3 +11,17 @@ Task 2: Apply Discounts Based on Membership
    - Example: Output something like "Regular membership detected. Applying 10% discount."
 🔹 Store the discount percentage for later calculations.
 """
+membership_type = input("What is your membership type? (Regular, Premium, VIP)")
+
+if membership_type == "VIP":
+    discount = 0.3
+    print ("VIP membership detected. Applying 30% discount.")
+elif membership_type == "Premium":
+    discount = 0.2
+    print ("Premium membership detected. Applying 20% discount.")
+else:
+    discount = 0.1
+    print ("Regular membership detected. Applying 10% discount.")
+    
+    
+

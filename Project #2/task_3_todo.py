@@ -10,3 +10,13 @@ Task 3: Extra Discounts for High Spenders
 🔹 Use logical operators (and, or) to check conditions.
 🔹 Store the extra discount percentage for later calculations.
 """
+
+extra_discount = 0
+if (total > 500):
+    extra_discount+= .1
+    print("High spender detected! Additional 10% discount applied.")
+elif (total > 200):
+    extra_discount+=.05
+    print("Spending over $200! Additional 5% discount applied.")
+else:
+    print("No discount applied.")

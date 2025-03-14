@@ -30,3 +30,23 @@ Final Amount to Pay: $187.50
 --------------------------
 Thank you for shopping with us!
 """
+
+total_discount = member_discount + extra_discount
+print(f"Total discount applied: {total_discount}%")
+final_total = total * total_discount
+print(f"Final price after discount: ${total_price}")
+print("""
+--------------------------
+--- Online Store Receipt ---
+Name: {name}
+Membership Type: {membership}
+Total Spent: ${total:.2f}
+Membership Discount: {member_discount}%
+Extra Discount: {extra_discount}%
+--------------------------
+Total Discount: {total_discount}%
+Final Amount to Pay: ${final_total:.2f}
+--------------------------
+Thank you for shopping with us!""")
+
+
