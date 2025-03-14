@@ -16,4 +16,12 @@ Task 1: User Input & Menu Display
    - Example: "Drinks: Coffee ($5), Tea ($5)..."
 
 """
-print("Hello, world")
+print("Welcome to Python Cafe")
+name_var = input("What is your name?")
+print(f"Hi {name_var}, here is our menu")
+menu = f"""
+-------- Python Cafe Menu --------
+Drinks: Coffee ($5), Tea ($5), Milk ($5)
+Entrees: Pasta ($15), Bread ($15), Fish ($15)
+Dessert: Ice Cream!!!! ($10), Brownie ($10), Donut ($10), Cake ($10)"""
+print(menu)

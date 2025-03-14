@@ -34,3 +34,25 @@ Task 3: Price Calculation & Receipt Formatting
    Thank you for dining with us!  
 
 """
+drink_price = 5
+entree_price = 15
+dessert_price = 10
+subtotal = drink_price + entree_price + dessert_price
+tax = subtotal * .1
+tip = subtotal * .15
+total =subtotal + tax + tip
+receipt = f"""
+   --------------------------
+   --- Python Café Receipt ---  
+   Name: {name_var}  
+   Drink: {drink_var} - ${drink_price}  
+   Entrée: {entree_var} - ${entree_price}  
+   Dessert: {dessert_var} - ${dessert_price}  
+   --------------------------  
+   Subtotal: ${subtotal:.2f}  
+   Tax (10%): ${tax:.2f}  
+   Tip (15%): ${tip:.2f}  
+   Total: ${total:.2f}  
+   --------------------------  
+   Thank you for dining with us!  
+"""

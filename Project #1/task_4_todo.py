@@ -12,3 +12,6 @@ Task 4: Final Order Summary & Confirmation
    - Example: "Thank you for dining at Python Café, <name_var>! Enjoy your meal!"
 
 """
+print(f'So, {name_var}, you ordered {drink_var}, {entree_var}, and {dessert_var}.')
+print(reciet)
+print(f"Thank you for dining at Python Café, {name_var}! Enjoy your meal!")

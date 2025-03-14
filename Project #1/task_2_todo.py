@@ -15,3 +15,8 @@ Task 2: Order Selection
 4. Store their choices in separate variables.
 
 """
+name_var = input("What is your name?")
+drink_var = input("Hi {name_var}, what would you like to drink?")
+entree_var = input("And what would you like for your entrée?")
+desert_var = input("Finally, what would you like for dessert?")
+
