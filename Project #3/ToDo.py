@@ -10,20 +10,69 @@ import random  # Importing random module for dice rolls
 # TODO: Display the starting scores for both players.
 # TODO: Set up a variable to track whose turn it is (Player 1 starts).
 
+print ("🎲 Welcome to the Dice Racing Game!")
+player_1 = input("Enter Player 1's name: ")
+player_2 = input("Enter Player 2's name: ")
+score_1 = 0
+score_2 = 0
+print (f"Scores: {player_1} - {score_1} | {player_2} - {score_2}")
+turn = 1
+while(True):
+    if turn == 1:
+       player, score = player_1, score_1 
+    else:
+        player, score = player_2, score_2
+    prompt = input(f"{player}, press Enter to roll...")
+    dice_roll = random.randint(1, 6)  # Generates a random number between 1 and 6
+    print(f"🎲 {player} rolled a {dice_roll}!")
+    score += dice_roll
+    # special event
+   
+    if (dice_roll == 6):
+        print("Extra roll awarded!")
+        dice_roll = random.randint(1, 6)  # Generates a random number between 1 and 6
+        print(f"🎲 {player} rolled a {dice_roll}!")
+        score += dice_roll
+    elif(dice_roll==1):
+        if (score - 2) > 0:
+            score -= 2
+        else:
+            score = 0
+        print("Oops! You stumbled and lost 2 points.")
+    if (score==15):
+        score += 5
+        print("Turbo boost activated! +5 points added!")
+
+    print(f"New score: {score}")
+    
+    
+    # Task 4: Checking for a Winner & Ending the Game
+    if (score >20):
+        print(f"{player} wins the race with 20 points!")
+        break
+        
+    if turn == 1:
+        score_1 = score
+        turn = 2
+    else:
+        score_2 = score
+        turn = 1
+    
+    print(f"Scores: {player_1} - {score_1} | {player_2} - {score_2}")
+    
+print("Game Over. Thanks for playing!")
+
 # Task 2: Player Turn & Dice Roll
 # TODO: Prompt the current player to press Enter to roll the dice.
-dice_roll = random.randint(1, 6)  # Generates a random number between 1 and 6
 # TODO: Display the result of the dice roll.
 # TODO: Add the dice roll result to the current player's score.
+
 
 # Task 3: Special Race Events
 # TODO: If the player rolls a 6, print a message and allow an extra roll.
 # TODO: If the player rolls a 1, print a message and subtract 2 points (ensure score doesn't go below 0).
 # TODO: If the player's score reaches exactly 15, print a message and add a 5-point turbo boost.
 
-# Task 4: Checking for a Winner & Ending the Game
-# TODO: After each turn, check if the player's score is 20 or more.
-# TODO: If a player reaches 20 or more points, print a message declaring them the winner and end the game.
 
 # Task 5: Turn Management & Game Continuation
 # TODO: Switch turn to the next player after each roll.
