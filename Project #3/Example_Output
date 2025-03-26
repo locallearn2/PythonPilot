@@ -1,13 +1,36 @@
-# Example_Output.txt (Sample Session)
-# Welcome to the Dice Racing Game!
-# Player 1: John
-# Player 2: Sarah
-# Scores: John - 0 | Sarah - 0
-# John, press Enter to roll...
-# 🎲 John rolled a 5! New score: 5
-# Sarah, press Enter to roll...
-# 🎲 Sarah rolled a 6! Extra roll awarded!
-# 🎲 Sarah rolled a 3! New score: 9
-# ... (continues until someone reaches 20)
-# 🎉 Sarah wins the race with 21 points!
-# Game Over.
+🎲 Welcome to the Dice Racing Game!
+Enter Player 1's name: Jane 
+Enter Player 2's name: Mark
+Scores: Jane - 0 | Mark - 0
+
+Jane, press Enter to roll...
+🎲 Jane rolled a 1!
+Oops! You stumbled and lost 2 points.
+Scores: Jane - 0 | Mark - 0
+
+Mark, press Enter to roll...
+🎲 Mark rolled a 6!
+Extra roll awarded!
+🎲 Mark rolled a 5!
+Scores: Jane - 0 | Mark - 11
+
+Jane, press Enter to roll...
+🎲 Jane rolled a 1!
+Oops! You stumbled and lost 2 points.
+Scores: Jane - 0 | Mark - 11
+
+Mark, press Enter to roll...
+🎲 Mark rolled a 2!
+Scores: Jane - 0 | Mark - 13
+
+Jane, press Enter to roll...
+🎲 Jane rolled a 2!
+Scores: Jane - 2 | Mark - 13
+
+Mark, press Enter to roll...
+🎲 Mark rolled a 2!
+Turbo boost activated! +5 points added!
+Scores: Jane - 2 | Mark - 20
+
+🎉 Mark wins the race with 20 points!
+Game Over. Thanks for playing!
